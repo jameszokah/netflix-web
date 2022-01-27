@@ -1,0 +1,98 @@
+.profilePage {
+    color: #fff;
+}
+
+.profilePage__body {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 8%;
+    max-width: 800px;
+}
+
+.profilePage__body>h1 {
+    font-size: 2.6rem;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin-bottom: 20px;
+}
+
+.profilePage__info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profilePage__info>img {
+    width: 100px;
+    object-fit: contain;
+}
+
+.profilePage__details {
+    flex: 1;
+    color: #fff;
+    margin-left: 25px;
+}
+
+.profilePage__details>h2 {
+    background-color: grey;
+    padding: 15px;
+    font-size: 15px;
+    padding-left: 20px;
+    width: 100%;
+    border: none;
+    color: #fff;
+}
+
+.profilePage__details>input:focus {
+    outline: none;
+}
+
+.profilePage__signgout__btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    margin-top: 5%;
+    color: #fff;
+    cursor: pointer;
+    background-color: #e50914;
+    font-weight: 600;
+    width: 100%;
+}
+
+.profilePage__signgout__btn:focus {
+    outline: none;
+}
+
+.profilePage__plans {
+    margin-top: 20px;
+}
+
+.profilePage__plans>h3 {
+    border-bottom: 1px solid #282c2d;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .profilePage__body {
+        padding-top: 15%;
+    }
+    .profilePage__body>h1 {
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 17px;
+    }
+    .profilePage__info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .profilePage__info>img {
+        width: 75px;
+        object-fit: contain;
+    }
+    .profilePage__details {
+        padding-top: 24px;
+    }
+}

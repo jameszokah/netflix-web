@@ -1,0 +1,10 @@
+.searchPage {
+    color: #fff;
+    padding-top: 100px;
+}
+
+.searchPage__content {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}

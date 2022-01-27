@@ -1,0 +1,64 @@
+.homeLayout {
+    position: relative;
+    height: 100vh;
+    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/61b1ed99-aa5e-4310-91cb-317f7140c653/316508ee-271d-401d-a6e7-69daf1160421/GH-en-20211220-popsignuptwoweeks-perspective_alpha_website_small.jpg") center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.homeLayout__logo {
+    width: 180px;
+    position: fixed;
+    left: 0;
+    padding-left: 30px;
+    padding-top: 25px;
+    object-fit: contain;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.homeLayout__login__btn {
+    position: fixed;
+    right: 27px;
+    top: 25px;
+    padding: 6px 18px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.homeLayout__gradient {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.homeLayout__body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* right: 20%; */
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .homeLayout {
+        overflow: hidden;
+    }
+    .homeLayout__logo {
+        width: 126px;
+    }
+}

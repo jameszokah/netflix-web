@@ -1,0 +1,108 @@
+.profileSelect {
+    color: #fff;
+}
+
+.profileSelect__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10%;
+    max-width: 800px;
+}
+
+.profileSelect__whos_watching {
+    font-size: 2.6rem;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.profileSelect__content {
+    display: flex;
+    flex-flow: wrap;
+    row-gap: 20px;
+    column-gap: 60px;
+}
+
+.profileSelect__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.profileSelect__profile__img {
+    width: 120px;
+    height: 124px;
+    position: relative;
+    object-fit: fill;
+    cursor: pointer;
+    transition: all 450ms;
+}
+
+.profileSelect__profile__img:hover {
+    border: 2px solid #fff;
+}
+
+.profileSelect__profile__img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.profileSelect__profile__img:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    z-index: 2;
+    transition: all 450ms;
+}
+
+.profileSelect__profile>h4 {
+    color: rgba(255, 255, 255, 0.583);
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.profileSelect__manage__porofile {
+    padding-top: 60px;
+}
+
+.profileSelect__manage__porofile>button {
+    border: 1px solid rgba(255, 255, 255, 0.479);
+    background-color: transparent;
+    padding: 15px 30px;
+    color: rgba(255, 255, 255, 0.479);
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    cursor: pointer;
+    transition: all 450ms;
+}
+
+.profileSelect__manage__porofile>button:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 600px) {
+    .profileSelect__whos_watching {
+        font-size: 1.6rem;
+    }
+    .profileSelect__manage__porofile>button {
+        font-size: 0.8em;
+    }
+    .profileSelect__profile__img {
+        width: 100px;
+        height: 110px;
+    }
+}

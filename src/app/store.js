@@ -1,8 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import authReducer from "../features/auth/authSlice";
+import bannerReducer from "../features/banner/bannerSlice";
+import movieRowReducer from "../features/movieRow/movieRowSlice";
+import userReducer from "../features/user/userSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    banner: bannerReducer,
+    movieRow: movieRowReducer,
+    auth: authReducer,
+    user: userReducer,
   },
 });

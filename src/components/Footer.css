@@ -1,0 +1,88 @@
+/* CSS VARIABLES */
+
+:root {
+    --primary: #141414;
+    --light: #F3F3F3;
+    --dark: #686868;
+}
+
+
+/* LINKS */
+
+.footer__link {
+    padding: 50px;
+}
+
+.sub-links ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.sub-links a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.sub-links a:hover {
+    color: var(--dark);
+    text-decoration: underline;
+}
+
+.footer__logos {
+    padding-bottom: 20px;
+}
+
+.footer__logos a {
+    padding: 10px;
+}
+
+.footer__logo {
+    color: var(--dark);
+    height: 26px;
+    width: 26px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: var(--dark);
+    margin: 10px;
+}
+
+footer>p>a,
+footer>p>a:visited {
+    color: var(--dark);
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 700px) {
+    .sub-links ul {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 500px) {
+    .footer__logos {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    .sub-links ul {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        font-size: 15px;
+    }
+}

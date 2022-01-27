@@ -1,0 +1,155 @@
+.banner {
+    height: 75vh;
+    position: relative;
+    color: #fff;
+    object-fit: contain;
+}
+
+.banner__content {
+    /* margin-left: 30px; */
+    /* padding-top: 150px; */
+    height: 200px;
+    position: absolute;
+    bottom: calc((75vh /2) - 70px);
+    left: 55px;
+    z-index: 2;
+}
+
+.banner__fadeLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 54vw;
+    height: 75vh;
+    background-image: linear-gradient(to right, rgb(16 16 16), rgb(18 17 17), rgb(18 17 17 / 88%), rgb(0 0 0 / 0%));
+}
+
+.banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+    text-shadow: -2px 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+.banner__description h2 {
+    width: 65rem;
+    line-height: 1.4;
+    padding-top: 1rem;
+    font-size: 1rem;
+    max-width: 360px;
+    height: 80px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.45);
+}
+
+.banner__fadeBottom {
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.69), #111);
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    left: 0;
+}
+
+.banner__buttons {
+    display: flex;
+}
+
+.banner__button {
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    padding: 0.46rem 2.1rem;
+    margin-right: 1rem;
+    border-radius: 0.2vw;
+    background-color: rgba(51, 51, 51, 0.5);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.banner__button__play {
+    background-color: rgba(242, 242, 242, 1);
+    color: #000;
+}
+
+.banner__button__play span {
+    padding-right: 1px;
+}
+
+.banner__button:focus {
+    outline: none;
+}
+
+.banner__button:hover {
+    transition: all 0.2s;
+    background-color: #e6e6e6;
+    color: black;
+}
+
+.banner__button__play:hover {
+    transition: all 0.2s;
+    background-image: linear-gradient(to top, transparent, #e6e6e696);
+    color: black;
+}
+
+.banner__series__type {
+    display: flex;
+    align-items: center;
+}
+
+.banner__series__type>img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    padding-right: 4px;
+}
+
+.banner__series__type>h2 {
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.banner__info {
+    display: flex;
+    justify-content: flex-start;
+    color: rgba(255, 255, 255, 0.74);
+    margin-bottom: 20px;
+}
+
+.banner__releaseYear,
+.banner__HD,
+.banner__info__seasons,
+.banner__averageVote,
+.banner__tv__ma {
+    margin-left: 20px;
+}
+
+.banner__HD,
+.banner__averageVote {
+    border: 0.3px solid rgba(255, 255, 255, 0.507);
+    border-radius: 3px;
+    text-align: center;
+    padding: 0 2px;
+    color: #fff;
+}
+
+.banner__match {
+    color: #41C562;
+}
+
+@media screen and (max-width: 600px) {
+    .banner__title {
+        font-size: 2rem;
+        width: calc(100vw - 20%);
+    }
+    .banner__content {
+        left: 37px;
+    }
+    .banner__description h2 {
+        width: calc(100vw - 20%);
+    }
+}

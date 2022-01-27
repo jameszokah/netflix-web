@@ -1,0 +1,20 @@
+.movieRow {
+    color: #fff;
+    padding-left: 20px;
+}
+
+.movieRow>h2 {
+    padding-left: 17px;
+}
+
+.movieRow__content {
+    /* min-width: 100%; */
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 18px;
+}
+
+.movieRow__content::-webkit-scrollbar {
+    display: none;
+}

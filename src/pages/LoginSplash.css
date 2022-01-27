@@ -1,0 +1,133 @@
+.loginSplash {
+    display: flex;
+    font-family: "Open Sans", Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.logo {
+    position: relative;
+    overflow: hidden;
+    height: 520px;
+    width: 360px;
+}
+
+.logo .uno,
+.logo .due,
+.logo .tre {
+    position: absolute;
+    background: #b00612;
+    height: 100%;
+    width: 120px;
+}
+
+.logo .uno {
+    left: 0;
+    opacity: 0;
+}
+
+.logo .due {
+    left: 0;
+    background: #e50815;
+    box-shadow: 0 0 20px black;
+    opacity: 0;
+    transform: skewX(25.4deg);
+    transform-origin: top left;
+    z-index: 1;
+}
+
+.logo .tre {
+    right: 0;
+    opacity: 0;
+}
+
+.logo::before {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: block;
+    background: black;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    content: "";
+    transform: translateX(-50%);
+    height: 30px;
+    width: 120%;
+    z-index: 10;
+}
+
+.logo {
+    animation: 2s 1.5s scaleup ease-in both;
+}
+
+.logo>.uno {
+    animation: 0.4s uno both;
+}
+
+.logo>.due {
+    animation: 0.4s 0.4s due both;
+}
+
+.logo>.tre {
+    animation: 0.4s 0.8s tre both;
+}
+
+@keyframes uno {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes due {
+    0% {
+        opacity: 0;
+        transform: skewX(25.4deg) translate(0%, -100%);
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: skewX(25.4deg) translate(0%, 0%);
+    }
+}
+
+@keyframes tre {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes scaleup {
+    80% {
+        opacity: 0;
+        transform: scale(10);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
