@@ -11,7 +11,7 @@ const PlayPage = () => {
 
   const { video, mediaType, movieId } = useSelector((state) => state.movieRow);
 
-  console.log("videoData:  ", video);
+  document.title = video?.title || "playing";
 
   const videoLink =
     mediaType === "movie"

@@ -35,7 +35,7 @@ const SearchPage = () => {
     }
   );
 
-  console.log(movies);
+
 
   // const { loading, data } = useQuery(["search", searchTerm], async () => {
   //   const resp = await netflix.get(`${requests.fetchSearchQuery}${searchTerm}`);

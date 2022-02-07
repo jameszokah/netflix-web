@@ -38,8 +38,7 @@ const DetailedPage = () => {
     }
   );
 
-  // console.log(movie);
-  console.log(mediaType);
+  
 
   const play = (movie) => {
     navigate("/play");
@@ -62,7 +61,7 @@ const DetailedPage = () => {
       } else {
         dispatch(hasAuth(false));
       }
-      console.log(user);
+    
     });
 
     return unsubscribe;

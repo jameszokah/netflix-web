@@ -63,7 +63,7 @@ const LoginPage = () => {
       } else {
         dispatch(hasAuth(false));
       }
-      console.log(user);
+     
     });
 
     return unsubscribe;

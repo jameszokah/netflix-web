@@ -26,7 +26,7 @@ const ProfilePage = () => {
       backgroundColor: isPaypalError ? "red" : "green",
     },
   };
-  const [openSnackbar, closeSnackbar] = useSnackbar(options);
+  const [openSnackbar] = useSnackbar(options);
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
 
@@ -50,7 +50,7 @@ const ProfilePage = () => {
       } else {
         dispatch(hasAuth(false));
       }
-      console.log(user);
+      
     });
 
     return unsubscribe;

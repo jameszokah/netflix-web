@@ -54,7 +54,6 @@ const SignupPage = () => {
         });
         dispatch(hasAuth(true));
         navigate("/splashing");
-        console.log(avatar);
       }
     } catch (err) {
       dispatch(passwordError(err.message));
@@ -75,7 +74,6 @@ const SignupPage = () => {
       } else {
         dispatch(hasAuth(false));
       }
-      console.log(user);
     });
 
     return unsubscribe;
