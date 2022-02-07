@@ -3,8 +3,7 @@ import { getOneMonthAgoReleaseDate } from "../utils/movieMonthAgo";
 export const LANG = "en-US";
 export const REGION = "US";
 export const BASE_IMG_URL = "https://image.tmdb.org/t/p/original";
-const { REACT_APP_API_KEY } = process.env;
-// const REACT_APP_API_KEY = "47cf166de97323e20993b900996b5e6f";
+const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
 const ONEMONTHAGO = getOneMonthAgoReleaseDate();
 
 const requests = {

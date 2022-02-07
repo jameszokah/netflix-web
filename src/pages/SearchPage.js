@@ -44,6 +44,7 @@ const SearchPage = () => {
 
   return (
     <div className="searchPage">
+      <h1>{searchTerm}</h1>
       {movies &&
         movies.pages.map((page) => (
           <InfiniteScroll

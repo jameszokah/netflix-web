@@ -71,7 +71,11 @@ const Footer = () => {
       <footer>
         <p>&copy; 2021-{new Date().getFullYear()} Netflix, Inc.</p>
         <p>
-          <a href="https://github.com/jameszokah" target="_blank">
+          <a
+            href="https://github.com/jameszokah"
+            target="_blank"
+            rel="noreferrer"
+          >
             James Zokah
           </a>{" "}
           &copy; {new Date().getFullYear()}

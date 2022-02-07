@@ -7,6 +7,7 @@ const MyListPage = () => {
   return (
     <div>
       <Banner />
+      <div className="MyListPage__movies"></div>
       <Footer />
     </div>
   );

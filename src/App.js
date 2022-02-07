@@ -13,7 +13,7 @@ import SignupPage from "./pages/SignupPage";
 import ProfilePage from "./pages/ProfilePage";
 import PlayPage from "./pages/PlayPage";
 import LoginSplash from "./pages/LoginSplash";
-import PlayAnimationPage from "./pages/PlayAnimationPage";
+// import PlayAnimationPage from "./pages/PlayAnimationPage";
 import Protected from "./components/Protected";
 import ProtectedSignup from "./components/ProtectedSignup";
 import ProtectedLogin from "./components/ProtectedLogin";
@@ -88,14 +88,14 @@ function App() {
           }
         />
 
-        <Route
+        {/* <Route
           path="player"
           element={
             <Protected path="/login">
               <PlayAnimationPage key="PlayAnimation page" />
             </Protected>
           }
-        />
+        /> */}
 
         <Route
           path="splash"

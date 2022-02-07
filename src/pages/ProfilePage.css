@@ -74,6 +74,73 @@
     padding-bottom: 10px;
 }
 
+.profilePage__plan__Wrapper {
+    padding: 10px;
+}
+
+.profilePage__plan {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 1px;
+}
+
+.profilePage__plan>h2 {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.profilePage__plan__btn {
+    border: none;
+    padding: 10px 20px;
+    background-color: #e50914;
+    cursor: pointer;
+    color: #fff;
+}
+
+.profilePage__plan__btn-disabled {
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(153, 153, 153);
+    cursor: pointer;
+    color: #fff;
+}
+
+.react-responsive-modal-modal {
+    background-color: #111 !important;
+    border-radius: 6px;
+}
+
+.model__wrap {
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.562);
+}
+
+.model__wrap>h2 {
+    padding: 10px 1px;
+}
+
+.model__wrap>input {
+    padding: 8px 1px;
+    margin-bottom: 20px;
+}
+
+#close__model__IconId>svg {
+    fill: #fff;
+}
+
+.profilePage__amount__field {
+    border: 1px solid rgba(128, 128, 128, 0.658);
+    padding: 7px 5px;
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+}
+
+.profilePage__amount__field:focus {
+    outline: none;
+}
+
 @media screen and (max-width: 600px) {
     .profilePage__body {
         padding-top: 15%;
@@ -94,5 +161,47 @@
     }
     .profilePage__details {
         padding-top: 24px;
+    }
+    .profilePage__plan__btn-disabled {
+        padding: 8px 10px;
+    }
+    .profilePage__plan__btn {
+        padding: 5px 10px;
+    }
+}
+
+@keyframes customEnterOverlayAnimation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes customLeaveOverlayAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes customEnterModalAnimation {
+    0% {
+        transform: scale(0.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes customLeaveModalAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.2);
     }
 }

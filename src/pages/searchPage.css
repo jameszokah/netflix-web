@@ -1,6 +1,11 @@
 .searchPage {
     color: #fff;
-    padding-top: 100px;
+    padding-top: 73px;
+}
+
+.searchPage>h1 {
+    color: #fff;
+    padding-left: 2.3rem;
 }
 
 .searchPage__content {

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@paypal/react-paypal-js": "^7.6.0",
     "@reduxjs/toolkit": "^1.7.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -18,8 +19,10 @@
     "react-query": "^3.34.7",
     "react-redux": "^7.2.6",
     "react-responsive": "^9.0.0-beta.5",
+    "react-responsive-modal": "^6.2.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-simple-snackbar": "^1.1.11",
     "swiper": "^7.4.1"
   },
   "scripts": {

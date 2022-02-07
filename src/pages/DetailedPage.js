@@ -42,7 +42,7 @@ const DetailedPage = () => {
   console.log(mediaType);
 
   const play = (movie) => {
-    navigate("/player", { replace: true });
+    navigate("/play");
     dispatch(getVideo(movie));
     dispatch(getMovieId(movie?.id));
   };

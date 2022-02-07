@@ -13,7 +13,7 @@ const TvCard = ({ tv, isOriginals, type, tvs, movieId }) => {
   const navigate = useNavigate();
 
   const handleDetailed = (tv) => {
-    navigate(`/player`, { replace: true });
+    navigate(`/play`);
     dispatch(getMediaType(type));
     dispatch(getVideo(tv));
     dispatch(getMovieId(movieId));

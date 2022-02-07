@@ -4,11 +4,14 @@ import NetflixLogo from "../img/NetflixLogo1.svg";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import { useMediaQuery } from "react-responsive";
 
 const Nav = ({ profile, profileSelect }) => {
   const [searchMovie, setSearchMovie] = useState("");
   const [changeNavBg, setChangeNavBg] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+
   let navigate = useNavigate();
   const { user, defaultAvatar } = useSelector((state) => state.user);
   const { isAuth } = useSelector((state) => state.auth);
@@ -101,7 +104,7 @@ const Nav = ({ profile, profileSelect }) => {
             <div
               className={`search ${showSearch ? "" : "showSearch"}`}
               style={{
-                width: showSearch ? "300px" : "50px",
+                width: showSearch ? isTabletOrMobile ? "220px" : "300px" : "50px",
               }}
             >
               <input

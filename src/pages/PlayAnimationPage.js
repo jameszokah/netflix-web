@@ -1,10 +1,8 @@
 import { useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
 import NetflixTaDrum from "../sounds/netflix_TaDum.mp3";
 import "./PlayAnimationPage.css";
 
-const PlayAnimationPage = () => {
-  const navigate = useNavigate();
+const PlayAnimationPage = ({ setPlayIntro }) => {
   const soundRef = useRef(null);
   const handleTadrum = () => {
     soundRef.current.currentTime = 0;
@@ -14,9 +12,9 @@ const PlayAnimationPage = () => {
   useEffect(() => {
     handleTadrum();
     setTimeout(() => {
-      navigate("/play");
-    }, 4200);
-  }, [navigate]);
+      setPlayIntro(false);
+    }, 4600);
+  }, [setPlayIntro]);
 
   return (
     <>
