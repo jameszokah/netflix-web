@@ -1,4 +1,5 @@
 # Noflix
+## This is a clone of the Oficial Netflix Web App
 
 [try Noflix live](https://noflix.netlify.app)
 
