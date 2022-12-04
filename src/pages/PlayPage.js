@@ -15,8 +15,8 @@ const PlayPage = () => {
 
   const videoLink =
     mediaType === "movie"
-      ? `https://netflix-player.herokuapp.com/se_player.php?video_id=${video?.id}&tmdb=1`
-      : `https://netflix-player.herokuapp.com/se_player.php?video_id=${movieId}&tmdb=1&s=${
+      ? `https://netflix-player.000webhostapp.com/se_player.php?video_id=${video?.id}&tmdb=1`
+      : `https://netflix-player.000webhostapp.com/se_player.php?video_id=${movieId}&tmdb=1&s=${
           video?.season_number ? video?.season_number : 1
         }&e=${video?.episode_number ? video?.episode_number : 1}`;
   return (
