@@ -57,6 +57,15 @@
     outline: none;
 }
 
+.loginPage__google__signin img {
+    height: 24px;
+    width: 24px;
+}
+
+.loginPage__google__signin p {
+    padding-left: 12px;
+}
+
 .loginPage__form>form>button {
     padding: 16px 20px;
     font-size: 1rem;
