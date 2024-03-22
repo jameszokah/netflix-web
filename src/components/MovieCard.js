@@ -10,7 +10,7 @@ const MovieCard = ({ movie, isOriginals, type }) => {
   const navigate = useNavigate();
 
   const handleDetailed = (movie) => {
-    navigate(`/watch/${movie?.id}`, { replace: true });
+    navigate(`/watch/${movie?.id}`, { replace: false });
     dispatch(getMediaType(type));
   };
   return (
