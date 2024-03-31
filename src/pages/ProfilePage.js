@@ -121,13 +121,17 @@ const ProfilePage = () => {
             defaultValue="6"
             ref={changeAmountRef}
           />
-          <PayPalBtn
+              {
+                /*
+                  <PayPalBtn
             currency="USD"
             changeAmountRef={changeAmountRef}
             openSnackbar={openSnackbar}
             onCloseModal={onCloseModal}
             setIsPaypalError={setIsPaypalError}
           />
+                */
+              }
         </div>
       </Modal>
     </>
